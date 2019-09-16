@@ -1,0 +1,214 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato|Yeseva+One&display=swap");
+body {
+  font-family: "Lato", sans-serif; }
+  body p {
+    line-height: 1.5;
+    font-size: 14px;
+    color: #5c5c5c; }
+
+body, ul {
+  margin: 0; }
+
+.container {
+  width: 75%;
+  margin: auto;
+  display: block; }
+
+.btn {
+  padding: 15px 0;
+  font-size: 18px;
+  width: 200px;
+  margin-right: 20px;
+  border: 0.1px solid;
+  color: white;
+  text-align: center; }
+
+h3 {
+  font-family: "Yeseva One", cursive;
+  font-size: 36px; }
+
+.orange-text {
+  color: #dab33e; }
+
+.white-text {
+  color: white; }
+
+.black-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px; }
+
+#homepage, #about, #ingredients, #menu, #reviews, #reservations {
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#homepage {
+  height: 100vh; }
+  #homepage #navigation-top, #homepage li, #homepage .btns, #homepage .content {
+    display: flex;
+    align-items: center; }
+  #homepage #navigation-top {
+    list-style-type: none;
+    height: 100px; }
+    #homepage #navigation-top .icons {
+      padding: 0 10px; }
+      #homepage #navigation-top .icons a {
+        color: #dab33e; }
+    #homepage #navigation-top li {
+      float: left;
+      padding: 0 30px;
+      height: 100%; }
+      #homepage #navigation-top li a {
+        color: white;
+        display: block;
+        text-decoration: none; }
+  #homepage .content {
+    flex-wrap: wrap;
+    margin-top: 100px; }
+    #homepage .content h2 {
+      font-family: "Yeseva One", cursive;
+      color: white;
+      text-align: center;
+      font-size: 90px;
+      width: 100%; }
+    #homepage .content img {
+      display: block;
+      margin: 0 auto 30px auto; }
+    #homepage .content .btns {
+      justify-content: center;
+      width: 100%; }
+    #homepage .content .black-btn {
+      background-color: rgba(0, 0, 0, 0.3);
+      border-color: black; }
+    #homepage .content .white-btn {
+      background-color: rgba(255, 255, 255, 0.3); }
+
+#about {
+  background-image: url("../img/about-background.png");
+  padding: 60px; }
+  #about .container {
+    display: flex;
+    text-align: center; }
+
+#ingredients {
+  padding: 60px; }
+  #ingredients .container {
+    display: flex;
+    text-align: center;
+    justify-content: flex-end; }
+    #ingredients .container .black-container {
+      width: 50%;
+      float: right; }
+      #ingredients .container .black-container .ingredients-list img {
+        margin: 10px; }
+
+#menu {
+  background-image: url("../img/menu-background.png");
+  padding: 60px; }
+  #menu .container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between; }
+    #menu .container .left-col, #menu .container .right-col {
+      width: 45%; }
+    #menu .container h3 {
+      margin-bottom: 10px; }
+    #menu .container .menu-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      #menu .container .menu-list h4 {
+        font-family: "Yeseva One", cursive;
+        color: #dab33e;
+        margin-bottom: 5px; }
+      #menu .container .menu-list p {
+        padding-top: 10px;
+        width: 100%;
+        border-top: 0.5px solid #dab33e; }
+
+#reviews {
+  padding: 60px; }
+  #reviews .container {
+    display: flex;
+    text-align: center;
+    justify-content: center; }
+    #reviews .container .black-container {
+      width: 50%;
+      position: relative; }
+      #reviews .container .black-container p::before {
+        content: "“";
+        font-size: 60px;
+        position: absolute;
+        left: 20px;
+        top: 170px;
+        font-family: "Yeseva One", cursive;
+        color: #999b99; }
+      #reviews .container .black-container .review {
+        font-size: 16px; }
+
+#reservations {
+  background-image: url("../img/menu-background.png");
+  padding: 60px; }
+  #reservations .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap; }
+    #reservations .container .left-col {
+      display: flex; }
+    #reservations .container .left-col, #reservations .container .right-col {
+      width: 45%; }
+    #reservations .container img {
+      padding: 10px; }
+    #reservations .container h3 {
+      margin: 5px; }
+    #reservations .container form input, #reservations .container form select {
+      height: 30px;
+      width: 200px;
+      border: 1px solid grey;
+      background: none;
+      color: #5c5c5c;
+      font-style: italic;
+      margin: 5px 0; }
+    #reservations .container form input:focus, #reservations .container form select:focus {
+      border-color: #dab33e; }
+    #reservations .container .form-inputs {
+      display: flex;
+      text-align: left;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+    #reservations .container .submit-btn {
+      color: white;
+      background: #dab33e;
+      border: 0.5px solid grey;
+      margin: 20px 0; }
+
+footer {
+  background-color: #191919;
+  padding: 60px; }
+  footer .container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: nowrap; }
+    footer .container div {
+      width: 30%;
+      position: relative; }
+      footer .container div p {
+        color: white; }
+      footer .container div h4 {
+        font-family: "Yeseva One", cursive;
+        color: white; }
+      footer .container div ul {
+        list-style-type: none;
+        position: absolute;
+        bottom: 14px;
+        left: 30px;
+        width: 180px; }
+        footer .container div ul li {
+          float: left;
+          padding: 0 10px; }
+          footer .container div ul li a {
+            color: white; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,229 @@
+// SASS
+// Variables
+$orange-text: #dab33e
+$white-text: white
+$para-text: #5c5c5c
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Yeseva+One&display=swap')
+// font-family: 'Yeseva One', cursive
+// font-family: 'Lato', sans-serif
+
+body
+  font-family: 'Lato', sans-serif
+  p
+    line-height: 1.5
+    font-size: 14px
+    color: $para-text
+
+body, ul
+  margin: 0
+
+.container
+  width: 75%
+  margin: auto
+  display: block
+
+.btn
+  padding: 15px 0
+  font-size: 18px
+  width: 200px
+  margin-right: 20px
+  border: .1px solid
+  color: white
+  text-align: center
+
+h3
+  font-family: 'Yeseva One', cursive
+  font-size: 36px
+
+.orange-text
+  color: $orange-text
+
+.white-text
+  color: $white-text
+
+.black-container
+  background-color: rgba(0, 0, 0, .5)
+  padding: 50px
+
+#homepage, #about, #ingredients, #menu, #reviews, #reservations
+  background-repeat: no-repeat
+  background-size: cover
+
+// Homepage
+#homepage
+  height: 100vh
+  #navigation-top, li,  .btns, .content
+    display: flex
+    align-items: center
+  #navigation-top
+    list-style-type: none
+    height: 100px
+    .icons
+      padding: 0 10px
+      a
+        color: $orange-text
+    li
+      float: left
+      padding: 0 30px
+      height: 100%
+      a
+        color: white
+        display: block
+        text-decoration: none
+  .content
+    flex-wrap: wrap
+    margin-top: 100px
+    h2
+      font-family: 'Yeseva One', cursive
+      color: white
+      text-align: center
+      font-size: 90px
+      width: 100%
+    img
+      display: block
+      margin: 0 auto 30px auto
+    .btns
+      justify-content: center
+      width: 100%
+    .black-btn
+      background-color: rgba(0, 0, 0, .3)
+      border-color: black
+    .white-btn
+      background-color: rgba(255, 255, 255, .3)
+
+// About
+#about
+  background-image: url('../img/about-background.png')
+  padding: 60px
+  .container
+    display: flex
+    text-align: center
+
+// Ingredients
+#ingredients
+  padding: 60px
+  .container
+    display: flex
+    text-align: center
+    justify-content: flex-end
+    .black-container
+      width: 50%
+      float: right
+      .ingredients-list
+        img
+          margin: 10px
+
+// Menu
+#menu
+  background-image: url('../img/menu-background.png')
+  padding: 60px
+  .container
+    display: flex
+    text-align: center
+    justify-content: space-between
+    .left-col, .right-col
+      width: 45%
+    h3
+      margin-bottom: 10px
+    .menu-list
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      h4
+        font-family: 'Yeseva One', cursive
+        color: $orange-text
+        margin-bottom: 5px
+      p
+        padding-top: 10px
+        width: 100%
+        border-top: 0.5px solid $orange-text
+
+// Reviews
+#reviews
+  padding: 60px
+  .container
+    display: flex
+    text-align: center
+    justify-content: center
+    .black-container
+      width: 50%
+      position: relative
+      p::before
+        content: "\201C"
+        font-size: 60px
+        position: absolute
+        left: 20px
+        top: 170px
+        font-family: 'Yeseva One', cursive
+        color: #999b99
+      .review
+        font-size: 16px
+
+// Reservations
+#reservations
+  background-image: url('../img/menu-background.png')
+  padding: 60px
+  .container
+    display: flex
+    justify-content: space-between
+    text-align: center
+    flex-wrap: wrap
+    .left-col
+      display: flex
+    .left-col, .right-col
+      width: 45%
+    img
+      padding: 10px
+    h3
+      margin: 5px
+    form
+      input,select,
+        height: 30px
+        width: 200px
+        border: 1px solid grey
+        background: none
+        color: #5c5c5c
+        font-style: italic
+        margin: 5px 0
+      input:focus, select:focus
+        border-color: $orange-text
+    .form-inputs
+      display: flex
+      text-align: left
+      justify-content: space-between
+      flex-wrap: wrap
+    .submit-btn
+      color: $white-text
+      background: $orange-text
+      border: 0.5px solid grey
+      margin: 20px 0
+
+// footer
+footer
+  background-color: #191919
+  padding: 60px
+  .container
+    display: flex
+    justify-content: space-around
+    text-align: center
+    flex-wrap: nowrap
+    div
+      width: 30%
+      position: relative
+      p
+        color: $white-text
+      h4
+        font-family: 'Yeseva One', cursive
+        color: $white-text
+      ul
+        list-style-type: none
+        position: absolute
+        bottom: 14px
+        left: 30px
+        width: 180px
+        li
+          float: left
+          padding: 0 10px
+          a
+            color: $white-text
